@@ -11,7 +11,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=AHMETPC\SQL2019;Database=Northwind;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Data Source=AHMETPC\\SQL2019; Initial Catalog=AsGozdeWebSiteDB; User Id=sa; Password=1");
         }
 
         public DbSet<Product> Products { get; set; }
